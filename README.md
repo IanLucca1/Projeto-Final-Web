@@ -5,6 +5,7 @@
     CampuStore
 
 ## Link da Publicação do Projeto:
+    http
 
 
 ## Participantes e Papéis:
