@@ -1,24 +1,24 @@
-# Projeto-Final-Web
+## Projeto-Final-Web
 ===========================================================================
 
-# (1) NOME DO PROJETO:
+# Nome do Projeto:
     CampuStore
 
-# (2) LINK DA PUBLICAÇÃO DO PROJETO:
+# Link da Publicação do Projeto:
 
 
-# (3) PARTICIPANTES E PAPÉIS:
+# Participantes e Papéis:
     Ian Lucca - Tech Lead
     Hugo Luiz - Desenvolvedor Front-End
     Davi Santos - Desenvolvedor Front-End & Redator
     Thales Grossi - Designer UI/UX
 
-# (4) OBJETIVO PRINCIPAL DO PROJETO:
+# Objetivo Principal do Projeto:
     O objetivo desse projeto é desenvolver, em equipe, o código em HTML, CSS e
     JavaScript de um site de vendas. Este site foi solicitado por uma varejista
     (fictícia) de produtos para estudantes universitários.
 
-# (5) DESCRIÇÃO RESUMIDA DO PROJETO:
+# Descrição Resumida do Projeto:
     A CampuStore é uma empresa do setor do varejo com foco em produtos para
     alunos cursando o Ensino Superior. No menu inicial de seu site, existem aces-
     sos destinados a cada tipo de produto (notebooks, livros, entre outros), um
