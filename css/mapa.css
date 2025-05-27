@@ -11,6 +11,7 @@ body {
 }
 
 .circle {
+  margin: 0 auto;
   background-color: #1268d0;
   border-radius: 50%;
   text-align: center;

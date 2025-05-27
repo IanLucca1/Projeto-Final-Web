@@ -1,0 +1,28 @@
+header {
+    display: flex;
+    background-color: #0d5fc4;
+    width: 100%;   
+    justify-content: space-around;    
+    position: fixed;    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;    
+}
+
+a:hover {
+    color: #5ce1e6;
+}
+
+#divA {    
+    margin-top: 30px;
+}
+
+#searchBar {
+    margin-left: 30px;
+    width: 30.1rem;
+    border-radius: 10px;
+    height: 25px;
+}
