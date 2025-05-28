@@ -1,9 +1,25 @@
-header {
+header {    
+    background-color: #1268d0;
+    width: 100%;              
+}
+
+#containerHeader {
     display: flex;
-    background-color: #0d5fc4;
-    width: 100%;   
-    justify-content: space-around;    
-    position: fixed;    
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 70px;
+}
+
+.logoImages {
+    height: 50px; 
+    cursor: pointer;
+}
+
+#navContent {
+    display: flex;
+    align-items: center;
+    gap: 40px; 
+    text-align: center;
 }
 
 a {
@@ -16,13 +32,14 @@ a:hover {
     color: #5ce1e6;
 }
 
-#divA {    
-    margin-top: 30px;
-}
-
 #searchBar {
     margin-left: 30px;
     width: 30.1rem;
     border-radius: 10px;
     height: 25px;
+}
+
+#figures {
+    display: flex;
+    gap: 40px;
 }
