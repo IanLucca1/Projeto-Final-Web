@@ -1,6 +1,6 @@
     const logo = document.getElementById('dvd-logo');
     const container = document.querySelector('.container');
-    const speed = 1; 
+    const speed = 2; 
 
     let dx = speed, dy = speed;
     let x = 0, y = 0;

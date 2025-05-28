@@ -10,19 +10,24 @@ body {
   color: #ffffff;
 }
 
+h1 {
+  font-size: 60px;
+}
+
 .circle {
   margin: 0 auto;
   background-color: #4197fa;
   border-radius: 50%;
   text-align: center;
-  height: 100vh;
-  width: 100vh;
+  height: 85vh;
+  width: 85vh;
   display: grid;
-  align-content: center;
+  align-content: center;  
 }
 
 #map {
   border-radius: 5%;
-  width: 65vh;
+  width: 55vh;
+  height: 35vh;
   border: 15px solid black;
 }

@@ -14,28 +14,32 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-height: 100vh;  
 }
 
 .circulo {
   background-color: #4197fa;
-  width: 50%;
-  height: 950px;
-  border-top-right-radius: 50% 50%;
-  border-bottom-right-radius: 50% 50%;
+  width: 50%;      
+  height: 100vh;
+  border-top-right-radius: 100% 100%;
+  border-bottom-right-radius: 100% 100%;  
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 30px;
+  z-index: -1;
 }
+
 .circulo .text {
   color: #fff;
 }
+
 .circulo .text #Titulo {
   font-size: 2.5em;
   margin-bottom: 20px;
 }
+
 .circulo .text #Descricao {
   font-size: 1.1em;
   line-height: 1.6;
@@ -43,8 +47,11 @@ body {
 
 .Membros {
   background: white;
-  padding: 30px;
-  border-radius: 10px;
+  padding: 30px;  
+  border-radius: 50px;
+  margin-right: 200px;
+  margin-left: 20px;
+  font-weight: bold;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .Membros h2 {

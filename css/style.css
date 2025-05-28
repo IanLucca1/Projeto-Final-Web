@@ -26,8 +26,8 @@ body {
 
 #dvd-logo {
   position: absolute;
-  width: 700px;
-  height: 700px;
+  width: 500px;
+  height: 500px;
   background-color: #4197fa;
   border-radius: 50%;
   z-index: -1;
