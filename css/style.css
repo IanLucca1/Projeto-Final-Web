@@ -8,7 +8,7 @@
 body {
   overflow: hidden; 
   font-family: sans-serif;
-  background: #5b7de3;
+  background-color: #347fdc;
   color: white;
   font-family: sans-serif;
   height: 100vh;
@@ -28,9 +28,10 @@ body {
   position: absolute;
   width: 700px;
   height: 700px;
-  background: #3d5ac2;
+  background-color: #4197fa;
   border-radius: 50%;
   z-index: -1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .header {
