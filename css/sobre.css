@@ -1,13 +1,19 @@
-* {
-  margin: 0;
-  padding: 0;
+* {    
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-body {
-  background-color: #347fdc;
+header {
+  position: fixed;  
+}
+
+body {  
   color: #333;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  background: linear-gradient(135deg, #347fdc, #5aa9f7);
 }
 
 .container {
@@ -18,17 +24,17 @@ body {
 }
 
 .circulo {
-  background-color: #4197fa;
+  background: linear-gradient(135deg, #347fdc, #5aa9f7, 0.1);
   width: 50%;      
   height: 100vh;
   border-top-right-radius: 100% 100%;
   border-bottom-right-radius: 100% 100%;  
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 30px;
-  z-index: -1;
+  animation: slideInLeft 1s ease;
 }
 
 .circulo .text {
@@ -52,24 +58,104 @@ body {
   margin-right: 200px;
   margin-left: 20px;
   font-weight: bold;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  animation: slideInRight 1s ease;
 }
+
 .Membros h2 {
   font-size: 1.8em;
   margin-bottom: 20px;
 }
+
 .Membros .membros-grid {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
+
 .Membros .membros-grid .membro {
   font-size: 1.1em;
   padding: 8px 12px;
   border-radius: 5px;
   background: #f0f0f0;
-  transition: background 0.3s;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
+
 .Membros .membros-grid .membro:hover {
   background: #e0e0e0;
+  transform: translateX(5px);
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-100px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(100px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* ========== RESPONSIVIDADE ========== */
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    max-height: none;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .circulo {
+    width: 90%;
+    height: auto;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  .circulo .text #Titulo {
+    font-size: 2em;
+  }
+
+  .Membros {
+    margin: 0;
+    width: 90%;
+    border-radius: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .circulo .text #Titulo {
+    font-size: 1.6em;
+  }
+
+  .circulo .text #Descricao {
+    font-size: 1em;
+  }
+
+  .Membros h2 {
+    font-size: 1.5em;
+  }
+
+  .Membros .membros-grid .membro {
+    font-size: 1em;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .circulo {
+    padding: 15px;
+  }
+
+  .Membros {
+    padding: 20px;
+  }
 }

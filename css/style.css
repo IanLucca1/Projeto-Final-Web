@@ -8,13 +8,13 @@
 body {
   overflow: hidden; 
   font-family: sans-serif;
-  background-color: #347fdc;
   color: white;
   font-family: sans-serif;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(135deg, #347fdc, #5aa9f7);
 }
 
 .container {
@@ -94,3 +94,29 @@ h1 {
 .item span {
   font-weight: bold;
 }
+
+/* @keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
