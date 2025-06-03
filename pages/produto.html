@@ -1,60 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/produto.css">
-    <link rel="stylesheet" href="../css/headertest.css">
-</head>
+    <link rel="stylesheet" href="../css/produto.css" />
+    <link rel="stylesheet" href="../css/headertest.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-    <div id="containerHeader">
-
-      <a href="../index.html">
-        <img src="https://cdn.iconscout.com/icon/free/png-256/free-imagem-quadrado-3604303-3004161.png?f=webp" alt=""
-          class="logoImages" srcset="" />
-      </a>
-
-      <div id="navContent">
-        <a href="">PRODUTOS</a>
-        <a href="">PROMOÇÃO</a>
-        <a href="./mapa.html">ENDEREÇO</a>
-        <a href="./sobre.html">SOBRE</a>
-        <input id="searchBar" type="text" placeholder="Pesquisar..." />
-      </div>
-
-      <div id="figures">
-        <figure>
-          <img src="https://cdn-icons-png.freepik.com/256/6644/6644782.png?semt=ais_incoming" class="logoImages"
-            alt="" />
-        </figure>
-        <!-- Shift + Alt + F -->
-        <figure>
+      <div id="containerHeader">
+        <a href="../index.html">
           <img
-            src="https://images.vexels.com/media/users/3/137047/isolated/lists/5831a17a290077c646a48c4db78a81bb-user-profile-blue-icon.png"
-            class="logoImages" alt="" />
-        </figure>
-      </div>
-    </div>
-  </header>
+            src="https://cdn.iconscout.com/icon/free/png-256/free-imagem-quadrado-3604303-3004161.png?f=webp"
+            alt=""
+            class="logoImages"
+            srcset=""
+          />
+        </a>
 
-    <section class="produto">
-        <div class="grid">
-            <div class="imagem">
-                <img id="imagem" src="../images/notebook_samsung.jpg" alt="Imagem Não Encontrada">
-            </div>
-            <div class="info">
-                <p class="nome-produto">Notebook Samsung</p>
-                <p class="preco">R$99999</p>
-                <p>descrição</p>
-                <button>Comprar</button>
-            </div>
-            <div class="tabela">fazer uma tabela com informações sobre o produto aqui</div>
+        <div id="navContent">
+          <a href="">PRODUTOS</a>
+          <a href="">PROMOÇÃO</a>
+          <a href="./mapa.html">ENDEREÇO</a>
+          <a href="./sobre.html">SOBRE</a>
+          <input id="searchBar" type="text" placeholder="Pesquisar..." />
         </div>
-    </section>
-</body>
 
+        <div id="figures">
+          <figure>
+            <img
+              src="https://cdn-icons-png.freepik.com/256/6644/6644782.png?semt=ais_incoming"
+              class="logoImages"
+              alt=""
+            />
+          </figure>
+
+          <figure>
+            <img
+              src="https://images.vexels.com/media/users/3/137047/isolated/lists/5831a17a290077c646a48c4db78a81bb-user-profile-blue-icon.png"
+              class="logoImages"
+              alt=""
+            />
+          </figure>
+        </div>
+      </div>
+    </header>
+
+    <div id="tabela-Main">
+      <table>
+        <tr class="linha-produtos">
+          <td class="tabela-produto">
+            <img
+              src="../images/caderno_1.jpg"
+              alt="Caderno"
+              class="img-produto"
+            />
+            <div id="teste-Div">
+              <p class="preco">R$ 99,90</p>
+              <p class="qtd">qtd: 10</p>
+              <div class="pagamento-linha">
+                <span>Formas de Pagamento:</span>
+                <img src="../images/metodo-de-pagamento.png" alt="Cartão" />
+                <img src="../images/metodo-de-pagamento.png" alt="Pix" />
+              </div>
+            </div>
+            <img src="" alt="" />
+          </td>
+          <td class="tabela-produto">
+            <img
+              src="../images/caderno_2.jpg"
+              alt="Caderno"
+              class="img-produto"
+            />
+            <div id="teste-Div">
+              <p class="preco">R$ 99,90</p>
+              <p class="qtd">qtd: 10</p>
+              <div class="pagamento-linha">
+                <span>Formas de Pagamento:</span>
+                <img src="../images/metodo-de-pagamento.png" alt="Cartão" />
+                <img src="../images/metodo-de-pagamento.png" alt="Pix" />
+              </div>
+            </div>
+          </td>
+          <td class="tabela-produto">
+            <img
+              src="../images/caderno_3.jpg"
+              alt="Caderno"
+              class="img-produto"
+            />
+            <div id="teste-Div">
+              <p class="preco">R$ 99,90</p>
+              <p class="qtd">qtd: 10</p>
+              <div class="pagamento-linha">
+                <span>Formas de Pagamento:</span>
+                <img src="../images/metodo-de-pagamento.png" alt="Cartão" />
+                <img src="../images/metodo-de-pagamento.png" alt="Pix" />
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
 </html>
