@@ -1,42 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CampuStore</title>
-  <link rel="stylesheet" href="./css/style.css"/>  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-</head>
-<body> 
-  <div class="container">
-    <div id="dvd-logo"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CampuStore</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div id="dvd-logo"></div>
 
-    <div class="header">				
-      	<h1>CampuStore</h1>
-      	<a href="./pages/cadastro.html" style="text-decoration: none;"><button class="entrar-btn">Entrar</button></a>
-    </div>
+      <div class="header">
+        <h1>CampuStore</h1>
+        <a href="./pages/cadastro.html" style="text-decoration: none"
+          ><button class="entrar-btn">Entrar</button></a
+        >
+      </div>
 
-    <div class="menu">
-      <div class="item">
-        <div class="icon"><i class="fas fa-home"></i></div>
-        <span>Início</span>
+      <div class="menu">
+        <a href="./pages/produto.html">
+          <div class="item">
+            <div class="icon"><i class="fas fa-home"></i></div>
+            <span>Início</span>
+          </div>
+        </a>
+        <a href="./pages/promocoes.html">
+          <div class="item">
+            <div class="icon"><i class="fas fa-percent"></i></div>
+            <span>Promoções</span>
+          </div></a
+        >
+        <a href="./pages/gradeProdutos.html">
+          <div class="item">
+            <div class="icon"><i class="fas fa-boxes"></i></div>
+            <span>Produtos</span>
+          </div>
+        </a>
+        <a href="./pages/sobre.html">
+          <div class="item">
+            <div class="icon"><i class="fas fa-users"></i></div>
+            <span>Sobre o Site</span>
+          </div>
+        </a>
       </div>
-      <div class="item">
-        <div class="icon"><i class="fas fa-percent"></i></div>
-        <span>Promoções</span>
-      </div>
-      <div class="item">
-        <div class="icon"><i class="fas fa-boxes"></i></div>
-        <span>Produtos</span>
-      </div>
-      <a href="./pages/sobre.html">
-        <div class="item">
-        <div class="icon"><i class="fas fa-users"></i></div>
-        <span>Sobre o Site</span>
-      </div>
-      </a>
     </div>
-  </div>
-</body>  
-<script src="index.js"></script>
+  </body>
+  <script src="index.js"></script>
 </html>
