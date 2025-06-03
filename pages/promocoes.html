@@ -1,80 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
- 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="../css/headertest.css" />
     <style>
-        body {
-            background-color: #347fdc;
-            color: #fff;
-            font-family: Arial, Helvetica, sans-serif;
-            place-self: center;
-        }
- 
-        h1 {
-            text-align: center;
-            padding-top: 100px;
-        }
- 
-        .produto {
-            background-color: #3d5ac2;
-            width: 1200px;
-            height: 500px;
-            place-content: center center;
-            border-radius: 4px;
-            padding: 0px 40px;
-        }
- 
-        .grid {
-            display: grid;
-            place-self: center left;
-            grid-template-columns: auto 1fr;
-            gap: 60px;
- 
-        }
- 
-        img {
-            width: 400px;
-            height: 400px;
-            border-radius: 4px;
-        }
- 
-        .info {
-            grid-column: 2;
-        }
- 
-        .nome-produto {
-            font-size: 48px;
-            margin: 0px;
-        }
- 
-        .preco-com-desconto {
-            font-size: 30px;
-        }
- 
-        .preco_sem_desconto {
-            text-decoration: line-through;
-        }
+      body {
+        background-color: #347fdc;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        place-self: center;
+      }
+
+      h1 {
+        text-align: center;
+        padding-top: 100px;
+      }
+
+      .produto {
+        background-color: #3d5ac2;
+        width: 1200px;
+        height: 500px;
+        place-content: center center;
+        border-radius: 4px;
+        padding: 0px 40px;
+      }
+
+      .grid {
+        display: grid;
+        place-self: center left;
+        grid-template-columns: auto 1fr;
+        gap: 60px;
+      }
+
+      #img-Promo {
+        width: 400px;
+        height: 400px;
+        border-radius: 4px;
+      }
+
+      .info {
+        grid-column: 2;
+      }
+
+      .nome-produto {
+        font-size: 48px;
+        margin: 0px;
+      }
+
+      .preco-com-desconto {
+        font-size: 30px;
+      }
+
+      .preco_sem_desconto {
+        text-decoration: line-through;
+      }
     </style>
-</head>
- 
-<body>
+  </head>
+
+  <body>
+    <header>
+      <div id="containerHeader">
+        <a href="../index.html">
+          <img
+            src="https://cdn.iconscout.com/icon/free/png-256/free-imagem-quadrado-3604303-3004161.png?f=webp"
+            alt=""
+            class="logoImages"
+          />
+        </a>
+
+        <div
+          id="menu-toggle"
+          aria-label="Menu"
+          aria-expanded="false"
+          role="button"
+          tabindex="0"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <div id="navContent">
+          <a href="./gradeProdutos.html">PRODUTOS</a>
+          <a href="./promocoes.html">PROMOÇÃO</a>
+          <a href="./mapa.html">ENDEREÇO</a>
+          <a href="./sobre.html">SOBRE</a>
+        </div>
+
+        <input id="searchBar" type="text" placeholder="Pesquisar..." />
+
+        <div id="figures">
+          <figure>
+            <img src="../images/carrinhoIMG.png" class="logoImages" />
+          </figure>
+          <figure>
+            <a href="./cadastro.html">
+              <img src="../images/profileIMG.png" class="logoImages" />
+            </a>
+          </figure>
+        </div>
+      </div>
+    </header>
     <h1>PROMOÇÃO IMPERDÍVEL!</h1>
     <section class="produto">
-        <div class="grid">
-            <img src="../images/fone_philips.jpg" alt="">
-            <div class="info">
-                <p class="nome-produto">Produto tal tal tal</p>
-                <p><span class="preco-com-desconto">R$390,99</span> de <span class="preco_sem_desconto">R$999,00</span>
-                </p>
-                <p>Descrição detalhada do produto, com o objetivo de fazer o consumir gastar seu suado salarinho em algo
-                    que ele vai usar 2 vezes antes de estragar</p>
-                <button>Comprar</button>
-            </div>
+      <div class="grid">
+        <img src="../images/fone_philips.jpg" alt="" id="img-Promo" />
+        <div class="info">
+          <p class="nome-produto">Produto tal tal tal</p>
+          <p>
+            <span class="preco-com-desconto">R$390,99</span> de
+            <span class="preco_sem_desconto">R$999,00</span>
+          </p>
+          <p>
+            Descrição detalhada do produto, com o objetivo de fazer o consumir
+            gastar seu suado salarinho em algo que ele vai usar 2 vezes antes de
+            estragar
+          </p>
+          <button>Comprar</button>
         </div>
+      </div>
     </section>
-</body>
- 
+  </body>
 </html>
