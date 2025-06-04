@@ -127,6 +127,15 @@ button:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+#resultado {
+    margin-top: 20px;
+    background: #e0f7fa;
+    padding: 10px;
+    border: 1px solid #00796b;
+    color: #004d40;
+    display: none;    
+}
+
 /* ------------------------------ Responsividade ------------------------------ */
 
 @media (max-width: 768px) {
