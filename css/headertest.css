@@ -10,7 +10,7 @@ a {
 }
 
 header {
-  background: linear-gradient(135deg,#0077ff, #000000, 1.1);
+  background: linear-gradient(#0077ff, #000000, 1.1);
   width: 100%;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   top: 0;
@@ -122,9 +122,13 @@ header {
 
 /* RESPONSIVE */
 
-@media (max-width: 900px) {
+@media (max-width: 1025px) {
   #containerHeader {
     padding: 10px 25px;
+  }
+
+  header {
+    position: relative;  
   }
   
   #searchBar {

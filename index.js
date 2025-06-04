@@ -1,39 +1,19 @@
-const logo = document.getElementById('dvd-logo');
-const container = document.querySelector('.container');
-const speed = 1;
+// HEADER HAMBURGUER
 
-let dx = speed, dy = speed;
-let x = 0, y = 0;
-let maxX, maxY;
+const menuToggle = document.getElementById("menu-toggle");
+  const navContent = document.getElementById("navContent");
 
-function updateBounds() {
-  const rect = container.getBoundingClientRect();
-  maxX = rect.width - logo.offsetWidth;
-  maxY = rect.height - logo.offsetHeight;
-}
+  menuToggle.addEventListener("click", () => {
+    navContent.classList.toggle("active");
+    menuToggle.classList.toggle("active");
 
-function animate() {
-  x += dx;
-  y += dy;
-
-  if (x <= 0 || x >= maxX) {
-    dx = -dx;
-  }
-  if (y <= 0 || y >= maxY) {
-    dy = -dy;
-  }
-
-  logo.style.transform = `translate(${x}px, ${y}px)`;
-  requestAnimationFrame(animate);
-}
-
-window.addEventListener('load', () => {
-  updateBounds();
-  requestAnimationFrame(animate);
-});
-
-window.addEventListener('resize', () => {
-  updateBounds();
-  x = Math.min(x, maxX);
-  y = Math.min(y, maxY);
+    const expanded = menuToggle.getAttribute("aria-expanded") === "true";
+    menuToggle.setAttribute("aria-expanded", String(!expanded));
+  });
+  
+  menuToggle.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      menuToggle.click();
+    }
 });

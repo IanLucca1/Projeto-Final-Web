@@ -8,49 +8,44 @@
     <link rel="stylesheet" href="../css/headertest.css" />
   </head>
   <body>
-    <header>
-      <div id="containerHeader">
-        <a href="../index.html">
-          <img
-            src="https://cdn.iconscout.com/icon/free/png-256/free-imagem-quadrado-3604303-3004161.png?f=webp"
-            alt=""
-            class="logoImages"
-          />
-        </a>
+  <header>
+    <div id="containerHeader">
+      <a href="../index.html">
+        <img src="https://cdn.iconscout.com/icon/free/png-256/free-imagem-quadrado-3604303-3004161.png?f=webp" alt=""
+          class="logoImages" />
+      </a>
 
-        <div
-          id="menu-toggle"
-          aria-label="Menu"
-          aria-expanded="false"
-          role="button"
-          tabindex="0"
-        >
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-
-        <div id="navContent">
-          <a href="./gradeProdutos.html">PRODUTOS</a>
-          <a href="./promocoes.html">PROMOÇÃO</a>
-          <a href="./mapa.html">ENDEREÇO</a>
-          <a href="./sobre.html">SOBRE</a>
-        </div>
-
-        <input id="searchBar" type="text" placeholder="Pesquisar..." />
-
-        <div id="figures">
-          <figure>
-            <img src="../images/carrinhoIMG.png" class="logoImages" />
-          </figure>
-          <figure>
-            <a href="./cadastro.html">
-              <img src="../images/profileIMG.png" class="logoImages" />
-            </a>
-          </figure>
-        </div>
+      <div id="menu-toggle" aria-label="Menu" aria-expanded="false" role="button" tabindex="0">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
-    </header>
+
+      <div id="navContent">
+        <a href="./produto.html">PAGINA INICIAL</a>
+        <a href="./gradeProdutos.html">PRODUTOS</a>
+        <a href="./promocoes.html">PROMOÇÃO</a>
+        <a href="./mapa.html">ENDEREÇO</a>
+        <a href="./sobre.html">SOBRE</a>
+      </div>
+
+      <input id="searchBar" type="text" placeholder="Pesquisar..." />
+
+      <div id="figures">
+        <figure>
+          <img src="../images/carrinhoIMG.png" class="logoImages" />
+        </figure>
+        <figure>
+          <a href="./cadastro.html">
+            <img
+              src="../images/profileIMG.png"
+              class="logoImages" />
+          </a>
+        </figure>
+      </div>
+    </div>
+  </header>
+
 
     <div class="container">
       <div class="circulo">
@@ -94,23 +89,5 @@
       </div>
     </div>
   </body>
-  <script>
-    const menuToggle = document.getElementById("menu-toggle");
-    const navContent = document.getElementById("navContent");
-
-    menuToggle.addEventListener("click", () => {
-      navContent.classList.toggle("active");
-      menuToggle.classList.toggle("active");
-
-      const expanded = menuToggle.getAttribute("aria-expanded") === "true";
-      menuToggle.setAttribute("aria-expanded", String(!expanded));
-    });
-    
-    menuToggle.addEventListener("keydown", (e) => {
-      if (e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
-        menuToggle.click();
-      }
-    });
-  </script>
+  <script src="../index.js"></script>
 </html>

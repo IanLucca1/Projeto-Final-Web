@@ -1,7 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;        
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
-  background-color: #347fdc;
+  background: linear-gradient(100deg, #347fdc, #5aa9f7);
   color: #000000;
   margin: 0;
 }
