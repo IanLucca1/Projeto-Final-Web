@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif; 
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: linear-gradient(#0077ff, #000000, 1.1);
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  top: 0;
+  left: 0;
+  z-index: 999;  
+  /* background-color: rgba(10,23,55,0.5); */
+}
+
+#containerHeader {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logoImages {
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logoImages:hover {
+  transform: scale(1.05);
+}
+
+#navContent {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  transition: max-height 0.4s ease;
+}
+
+#navContent a {
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#navContent a:hover,
+#navContent a:focus {
+  background-color: #005dbb;
+  color: #f0f8ff;
+  outline: none;
+}
+
+#searchBar {
+  padding: 7px 12px;
+  border-radius: 20px;
+  border: none;
+  width: 260px;
+  max-width: 100%;
+  font-size: 0.9rem;
+  transition: box-shadow 0.3s ease;
+}
+
+#searchBar:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(30, 144, 255, 0.6);
+}
+
+#figures {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+#figures .logoImages {
+  
+  margin-left: 10px;
+}
+
+/* Menu Hamburger */
+#menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  width: 30px;
+  height: 22px;
+  justify-content: space-between;
+  z-index: 1001;
+}
+
+#menu-toggle .bar {
+  height: 3.5px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 3px;
+  transition: all 0.4s ease;
+}
+
+#menu-toggle.active .bar:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+#menu-toggle.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-toggle.active .bar:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1025px) {
+  #containerHeader {
+    padding: 10px 25px;
+  }
+
+  header {
+    position: relative;  
+  }
+  
+  #searchBar {
+    width: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: flex;
+  }
+
+  #navContent {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: max-height 0.5s ease;
+  }
+
+  #navContent.active {
+    max-height: 500px; 
+  }
+
+  #navContent a {
+    padding: 15px 20px;
+    font-size: 1.1rem;
+  }
+
+  #searchBar {
+    width: 90%;
+    margin: 15px auto;
+  }
+
+  #figures {
+    width: 100%;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 40px;
+  }
+}

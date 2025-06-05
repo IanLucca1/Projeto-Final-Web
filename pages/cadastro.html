@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../css/cadastro.css">
+</head>
+<body>    
+    <div class="divGoBack">
+        <a href="javascript:void(0);" onclick="window.history.back()" style="text-decoration: none; color: white;">Voltar</a>
+    </div>
+
+    <form id="formCadastro" method="GET" onsubmit="return processarFormulario(this)">
+        <h2>CADASTRO</h2>
+        <div class="form-group">
+            <input type="text" class="textCadastro" name="nome" placeholder="Nome completo" >
+            <input type="text" class="textCadastro" name="cpf" placeholder="CPF" required pattern="\d{11}" title="CPF deve ter 11 números"/>
+            <input type="text" class="textCadastro" name="cep" placeholder="CEP" required pattern="\d{8}" title="CEP deve ter 8 números"/>
+            <input type="email" class="textCadastro" name="email" placeholder="Email">
+            <input type="password" class="textCadastro" name="senha" placeholder="Senha">
+            <button type="submit">Cadastrar</button>
+        </div>
+    </form>
+
+     <div id="resultado"></div>
+     
+</body>
+  <script>
+ function processarFormulario(form) {
+      const nome = form.nome.value.trim();
+      const cpf = form.cpf.value.trim();
+      const cep = form.cep.value.trim();
+      const email = form.email.value.trim();
+      const senha = form.senha.value.trim();
+
+      if (!nome || !cpf || !cep || !email || !senha) {
+        alert('Por favor, preencha todos os campos!');
+        return false;
+      }
+
+      const resultado = document.getElementById('resultado');
+      resultado.style.display = 'block';
+      resultado.innerHTML = `
+        <h3>Dados recebidos via GET:</h3>
+        <ul>
+          <li><strong>Nome:</strong> ${nome}</li>
+          <li><strong>CPF:</strong> ${cpf}</li>
+          <li><strong>CEP:</strong> ${cep}</li>
+          <li><strong>Email:</strong> ${email}</li>
+          <li><strong>Senha:</strong> ${'*'.repeat(senha.length)}</li>
+        </ul>`;
+
+      const params = new URLSearchParams({
+        nome, cpf, cep, email, senha
+      }).toString();
+      history.replaceState(null, '', '?' + params);
+
+      return false; 
+    }
+  </script>
+</html>

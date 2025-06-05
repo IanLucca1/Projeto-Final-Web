@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(100deg, #347fdc, #5aa9f7);
+  color: #000000;
+  margin: 0;
+}
+
+/* Estilo geral da tabela */
+#tabela-Main {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+#quantidadeHeader {
+  cursor: pointer;
+  user-select: none;
+}
+
+table {
+  width: 90%;
+  max-width: 1000px;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Cabeçalho */
+table th {
+  background-color: #1a73e8;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: left;
+  font-size: 1rem;
+}
+
+/* Linhas da tabela */
+table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.95rem;
+}
+
+/* Efeito de hover */
+table tr:hover {
+  background-color: #f5faff;
+}
+
+/* Última linha sem borda */
+table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  table {
+    font-size: 0.85rem;
+  }
+
+  table th,
+  table td {
+    padding: 0.7rem;
+  }
+}

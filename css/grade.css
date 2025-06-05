@@ -1,0 +1,44 @@
+body {
+  background: linear-gradient(100deg, #347fdc, #5aa9f7);
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(3, 400px);
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.grid a {
+    color: #000;
+}
+
+.produto {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.img-produto {
+    height: 250px;
+    width: 200px;
+    margin: 10px auto;
+    margin-bottom: 50px;
+    display: block;
+}
+
+.nome-produto {
+    font-size: 24px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.preco {
+    color: #103;
+    margin: 5px;
+}
