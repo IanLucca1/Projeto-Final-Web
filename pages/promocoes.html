@@ -1,72 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/headertest.css" />
-    <style>
 
-      * {
-        margin: 0;
-        padding: 0;        
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/headertest.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-      body {
-        background: linear-gradient(100deg, #347fdc, #5aa9f7);
-        color: #fff;        
-        place-self: center;
-      }
+    body {
+      background: linear-gradient(100deg, #347fdc, #5aa9f7);
+      color: #fff;
+      place-self: center;
+    }
 
-      h1 {
-        text-align: center;
-        padding-top: 100px;
-      }
+    h1 {
+      text-align: center;
+      padding-top: 100px;
+    }
 
-      .produto {
-        background-color: #3d5ac2;
-        width: 1200px;
-        height: 500px;
-        place-content: center center;
-        border-radius: 4px;
-        padding: 0px 40px;
-      }
+    .produto {
+      background-color: #3d5ac2;
+      width: 1200px;
+      height: 500px;
+      place-content: center center;
+      border-radius: 4px;
+      padding: 0px 40px;
+    }
 
-      .grid {
-        display: grid;
-        place-self: center left;
-        grid-template-columns: auto 1fr;
-        gap: 60px;
-      }
+    .grid {
+      display: grid;
+      place-self: center left;
+      grid-template-columns: auto 1fr;
+      gap: 60px;
+    }
 
-      #img-Promo {
-        width: 400px;
-        height: 400px;
-        border-radius: 4px;
-      }
+    #img-Promo {
+      width: 400px;
+      height: 400px;
+      border-radius: 4px;
+    }
 
-      .info {
-        grid-column: 2;
-      }
+    .info {
+      grid-column: 2;
+    }
 
-      .nome-produto {
-        font-size: 48px;
-        margin: 0px;
-      }
+    .nome-produto {
+      font-size: 48px;
+      margin: 0px;
+    }
 
-      .preco-com-desconto {
-        font-size: 30px;
-      }
+    .preco-com-desconto {
+      font-size: 30px;
+    }
 
-      .preco_sem_desconto {
-        text-decoration: line-through;
-      }
-    </style>
-  </head>
+    .preco_sem_desconto {
+      text-decoration: line-through;
+    }
+  </style>
+</head>
 
-  <body>
-   <header>
+<body>
+  <header>
     <div id="containerHeader">
       <a href="../index.html">
         <img src="https://cdn.iconscout.com/icon/free/png-256/free-imagem-quadrado-3604303-3004161.png?f=webp" alt=""
@@ -91,38 +91,39 @@
 
       <div id="figures">
         <figure>
-          <img src="../images/carrinhoIMG.png" class="logoImages" />
+          <a href="./carrinho.html">
+            <img src="../images/carrinhoIMG.png" class="logoImages" />
+          </a>
         </figure>
         <figure>
           <a href="./cadastro.html">
-            <img
-              src="../images/profileIMG.png"
-              class="logoImages" />
+            <img src="../images/profileIMG.png" class="logoImages" />
           </a>
         </figure>
       </div>
     </div>
   </header>
 
-    <h1>PROMOÇÃO IMPERDÍVEL!</h1>
-    <section class="produto">
-      <div class="grid">
-        <img src="../images/fone_philips.jpg" alt="" id="img-Promo" />
-        <div class="info">
-          <p class="nome-produto">Produto tal tal tal</p>
-          <p>
-            <span class="preco-com-desconto">R$390,99</span> de
-            <span class="preco_sem_desconto">R$999,00</span>
-          </p>
-          <p>
-            Descrição detalhada do produto, com o objetivo de fazer o consumir
-            gastar seu suado salarinho em algo que ele vai usar 2 vezes antes de
-            estragar
-          </p>
-          <button>Comprar</button>
-        </div>
+  <h1>PROMOÇÃO IMPERDÍVEL!</h1>
+  <section class="produto">
+    <div class="grid">
+      <img src="../images/fone_philips.jpg" alt="" id="img-Promo" />
+      <div class="info">
+        <p class="nome-produto">Produto tal tal tal</p>
+        <p>
+          <span class="preco-com-desconto">R$390,99</span> de
+          <span class="preco_sem_desconto">R$999,00</span>
+        </p>
+        <p>
+          Descrição detalhada do produto, com o objetivo de fazer o consumir
+          gastar seu suado salarinho em algo que ele vai usar 2 vezes antes de
+          estragar
+        </p>
+        <button>Comprar</button>
       </div>
-    </section>
-  </body>
-  <script src="../index.js"></script>
+    </div>
+  </section>
+</body>
+<script src="../index.js"></script>
+
 </html>
