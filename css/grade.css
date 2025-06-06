@@ -42,3 +42,25 @@ body {
     color: #103;
     margin: 5px;
 }
+
+
+/* Responsividade */
+
+@media (max-width: 1300px ) {
+
+    .grid{
+        grid-template-columns: repeat(3,240px);
+    }
+    
+}
+
+@media (max-width: 750px ) {
+
+    .grid{
+        grid-template-columns: repeat(2,240px);
+    }
+    
+}
+
+
+
