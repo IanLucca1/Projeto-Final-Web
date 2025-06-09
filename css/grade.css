@@ -61,3 +61,11 @@ body {
     }
     
 }
+
+@media (max-width: 450px ) {
+
+    .grid{
+        grid-template-columns: repeat(1,240px);
+    }
+    
+}
