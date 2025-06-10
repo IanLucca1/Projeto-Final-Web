@@ -20,10 +20,36 @@
     (fictícia) de produtos para estudantes universitários.
 
 ## Descrição Resumida do Projeto:
-    A CampuStore é uma empresa do setor do varejo com foco em produtos para
-    alunos cursando o Ensino Superior. No menu inicial de seu site, existem aces-
-    sos destinados a cada tipo de produto (notebooks, livros, entre outros), um
-    acesso separado para promoções e outro para a página de pesquisa.
-    Além disso, o projeto possui um carrinho de compras completamente funcinal,
-    um formulário para o cadastro de contas .....
+    1 - Página Inicial
+    O Index do site possui o nome da loja centralizado na tela. Abaixo dele há
+    o botão 'Entrar', que direciona o usuário à página de cadastro, e quatro botões
+    para navegar em outras páginas.
+
+    2 - Tabela de Produtos
+    Esta página apresenta ao usuário uma tabela com todos os produtos vendidos
+    no site, informando seu preço e quantidade no estoque.
+
+    3 - Grade de Produtos
+    Nesta página, as imagens dos produtos estão organizadas em um grid. Aqui,
+    o nome dos produtos são links que adicionam o produto em questão ao carrinho
+    de compras.
+
+    4 - Carrinho
+    É possível visualizar todos os produtos adicionados previamente ao carrinho,
+    com seus respectivos preços. Ao clicar no botão 'Pagar', o carrinho é esvaziado.
+
+    5 - Promoções
+    A página de promoções apresenta um produto que está sendo vendido com um grande
+    desconto. Nela há uma breve descrição do produto em questão, e um botão para
+    adicioná-lo ao carrinho.
+
+    6 - Endereço
+    Esta página mostra um mapa com a localização da sede da CampuStore.
+
+    7 - Cadastro
+    Nesta página, o usuário pode se cadastrar em nosso site e criar uma conta.
+    As informações digitadas em cada campo são então exibidas ao lado e na URL.
+
+    8 - Sobre o Projeto
+    Página com uma breve descrição do site e de seus criadores.
     	
