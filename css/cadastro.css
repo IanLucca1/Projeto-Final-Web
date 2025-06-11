@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  list-style: none;
 }
 
 body {
@@ -129,10 +130,11 @@ button:hover {
 
 #resultado {
   margin-top: 20px;
-  background: #e0f7fa;
+  background: #82deff;
   padding: 10px;
-  border: 1px solid #00796b;
-  color: #004d40;
+  border: 1px solid #003c80;
+  color: #000000;
+  border-radius: 10px;
   display: none;
 }
 
@@ -162,9 +164,20 @@ button:hover {
     font-size: 0.9em;
     padding: 8px 12px;
   }
+
+  #resultado {
+    position: absolute;
+    margin-top: 40rem;
+  }
 }
 
 @media (max-width: 480px) {
+
+  #resultado {
+    position: absolute;
+    margin-top: 40rem;
+  }
+
   form {
     padding: 25px;
     border-radius: 15px;

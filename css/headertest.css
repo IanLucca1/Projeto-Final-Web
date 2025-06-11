@@ -15,8 +15,7 @@ header {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   top: 0;
   left: 0;
-  z-index: 999;
-  /* background-color: rgba(10,23,55,0.5); */
+  z-index: 999;  
 }
 
 #containerHeader {
@@ -119,7 +118,7 @@ header {
   transform: translateY(-9px) rotate(-45deg);
 }
 
-/* RESPONSIVE */
+/* Responsividade ************************************************ */
 
 @media (max-width: 1025px) {
   #containerHeader {

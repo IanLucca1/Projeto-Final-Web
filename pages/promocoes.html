@@ -1,62 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="../images/Media.png" type="image/png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CampuStore</title>
-    <link rel="stylesheet" href="../css/headertest.css" />
-    <link rel="stylesheet" href="../css/promocoes.css" />
-  </head>
+<html lang="pt-BR">
 
-  <body>
-    <header>
-      <div id="containerHeader">
-        <a href="../index.html">
-          <img src="../images/Media.png" alt="" class="logoImages" />
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="../images/Media.png" type="image/png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CampuStore</title>
+  <link rel="stylesheet" href="../css/headertest.css" />
+  <link rel="stylesheet" href="../css/promocoes.css" />
+</head>
 
-        <div
-          id="menu-toggle"
-          aria-label="Menu"
-          aria-expanded="false"
-          role="button"
-          tabindex="0"
-        >
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
+<body>
+  <header>
+    <div id="containerHeader">
+      <a href="../index.html">
+        <img src="../images/Media.png" alt="Logo CampuStore" class="logoImages" />
+      </a>
 
-        <div id="navContent">
-          <a href="./produto.html">PAGINA INICIAL</a>
-          <a href="./gradeProdutos.html">PRODUTOS</a>
-          <a href="./promocoes.html">PROMOÇÃO</a>
-          <a href="./mapa.html">ENDEREÇO</a>
-          <a href="./sobre.html">SOBRE</a>
-        </div>
-
-        <input id="searchBar" type="text" placeholder="Pesquisar..." />
-
-        <div id="figures">
-          <figure>
-            <a href="./carrinho.html">
-              <img src="../images/carrinhoIMG.png" class="logoImages" />
-            </a>
-          </figure>
-          <figure>
-            <a href="./cadastro.html">
-              <img src="../images/profileIMG.png" class="logoImages" />
-            </a>
-          </figure>
-        </div>
+      <div id="menu-toggle" aria-label="Menu" aria-expanded="false" role="button" tabindex="0">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
-    </header>
 
+      <div id="navContent">
+        <a href="./produto.html">PÁGINA INICIAL</a>
+        <a href="./gradeProdutos.html">PRODUTOS</a>
+        <a href="./promocoes.html">PROMOÇÃO</a>
+        <a href="./mapa.html">ENDEREÇO</a>
+        <a href="./sobre.html">SOBRE</a>
+      </div>
+
+      <div id="figures">
+        <figure>
+          <a href="./carrinho.html">
+            <img src="../images/carrinhoIMG.png" class="logoImages" alt="Carrinho" />
+          </a>
+        </figure>
+        <figure>
+          <a href="./cadastro.html">
+            <img src="../images/profileIMG.png" class="logoImages" alt="Perfil" />
+          </a>
+        </figure>
+      </div>
+    </div>
+  </header>
+
+  <main>
     <h1>PROMOÇÃO IMPERDÍVEL!</h1>
     <section class="produto">
       <div class="grid">
-        <img src="../images/macbook.jpg" alt="" id="img-Promo" />
+        <img src="../images/macbook.jpg" alt="MacBook em promoção" id="img-Promo" />
         <div class="info">
           <p class="nome-produto">Apple 2024 MacBook Air</p>
           <p>
@@ -71,10 +65,38 @@
             elegância.
           </p>
           <p class="porcentagem">Garanta 36% de desconto!</p>
-          <button>Adicionar ao Carrinho</button>
+          <button id="buttonPagar"><span>COMPRAR</span></button>
         </div>
       </div>
     </section>
-  </body>
+  </main>
   <script src="../index.js"></script>
+</body>
+<script>
+
+  function handleAdicionarCarrinho(buttonElement) {
+    const nome = buttonElement.querySelector(".nome-produto").innerText;
+    const preco = buttonElement
+      .querySelector(".preco-com-desconto")
+      .innerText.replace("R$", "")
+      .trim();
+
+    let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+
+    if (carrinho.length >= 7) {
+      alert("Carrinho Cheio!!!");
+      return;
+    }
+
+    carrinho.push({ nome, preco });
+    localStorage.setItem("carrinho", JSON.stringify(carrinho));
+
+    alert(`${nome} Adicionado ao Carrinho!`);
+  }
+
+  document.getElementById("buttonPagar").addEventListener("click", function () {
+    handleAdicionarCarrinho(this.parentElement);
+  });
+
+</script>
 </html>

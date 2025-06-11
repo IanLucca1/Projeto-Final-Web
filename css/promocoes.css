@@ -1,45 +1,105 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
   background: linear-gradient(100deg, #347fdc, #5aa9f7);
   color: #fff;
-  place-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 h1 {
-  font-size: 72px;
+  font-size: 48px;
   text-align: center;
-  padding: 100px 0px;
+  padding: 30px 20px;
 }
 
 .produto {
-  background-color: #3d5ac2;
-  width: 1200px;
-  height: 500px;
-  place-content: center center;
-  border-radius: 4px;
-  padding: 0px 40px;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 8px;
+  padding: 40px;
+  margin-bottom: 60px;
 }
 
 .grid {
   display: grid;
-  place-self: center left;
-  grid-template-columns: auto 1fr;
-  gap: 60px;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  color: #000000;
 }
 
 #img-Promo {
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  max-width: 400px;
   border-radius: 4px;
+  transition: transform 0.3s ease;
 }
 
-.info {
-  grid-column: 2;
+#img-Promo:hover {
+  transform: scale(1.1);
+}
+
+#buttonPagar {
+  border-radius: 4px;
+  background-color: #00bcd4;
+  text-align: center;
+  font-size: 28px;
+  transition: all 0.5s;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#buttonPagar:hover {
+  background-color: #0292a5;
+}
+
+#buttonPagar span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#buttonPagar span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#buttonPagar:hover span {
+  padding-right: 25px;
+}
+
+#buttonPagar:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 .info p {
@@ -47,15 +107,40 @@ h1 {
 }
 
 .nome-produto {
-  font-size: 48px;
-  margin: 0px;
+  font-size: 32px;
 }
 
 .preco-com-desconto,
 .porcentagem {
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .preco_sem_desconto {
   text-decoration: line-through;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .nome-produto {
+    font-size: 28px;
+  }
+
+  .preco-com-desconto,
+  .porcentagem {
+    font-size: 20px;
+  }
+
+  .grid {
+    display: block;    
+    gap: 0px;        
+  }
 }
