@@ -1,4 +1,4 @@
-* {    
+* {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -6,10 +6,10 @@
 }
 
 header {
-  position: fixed;  
+  position: fixed;
 }
 
-body {  
+body {
   color: #333;
   opacity: 0;
   animation: fadeIn 1s ease forwards;
@@ -20,15 +20,15 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-height: 100vh;  
+  max-height: 100vh;
 }
 
 .circulo {
   background: linear-gradient(135deg, #347fdc, #5aa9f7, 0.1);
-  width: 50%;      
+  width: 50%;
   height: 100vh;
   border-top-right-radius: 100% 100%;
-  border-bottom-right-radius: 100% 100%;  
+  border-bottom-right-radius: 100% 100%;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
@@ -53,7 +53,7 @@ body {
 
 .Membros {
   background: white;
-  padding: 30px;  
+  padding: 30px;
   border-radius: 50px;
   margin-right: 200px;
   margin-left: 20px;
@@ -87,17 +87,31 @@ body {
 }
 
 @keyframes fadeIn {
-  to { opacity: 1; }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slideInLeft {
-  from { transform: translateX(-100px); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @keyframes slideInRight {
-  from { transform: translateX(100px); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 /* ========== RESPONSIVIDADE ========== */

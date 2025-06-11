@@ -54,5 +54,3 @@ document.getElementById("valorHeader").addEventListener("click", () => {
     ascending1 ? "&#x25B2;" : "&#x25BC;"
   }`;
 });
-
-

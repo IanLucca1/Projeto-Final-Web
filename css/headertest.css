@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif; 
+  font-family: "Open Sans", sans-serif;
 }
 
 a {
@@ -12,10 +12,10 @@ a {
 header {
   background: linear-gradient(#0077ff, #000000, 1.1);
   width: 100%;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   top: 0;
   left: 0;
-  z-index: 999;  
+  z-index: 999;
   /* background-color: rgba(10,23,55,0.5); */
 }
 
@@ -85,7 +85,6 @@ header {
 }
 
 #figures .logoImages {
-  
   margin-left: 10px;
 }
 
@@ -128,9 +127,9 @@ header {
   }
 
   header {
-    position: relative;  
+    position: relative;
   }
-  
+
   #searchBar {
     width: 180px;
   }
@@ -153,7 +152,7 @@ header {
   }
 
   #navContent.active {
-    max-height: 500px; 
+    max-height: 500px;
   }
 
   #navContent a {

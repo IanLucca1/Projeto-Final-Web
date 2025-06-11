@@ -1,71 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="../images/Media.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/mapa.css" />
+    <link rel="stylesheet" href="../css/headertest.css" />
+    <title>Mapa</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/mapa.css" />
-  <link rel="stylesheet" href="../css/headertest.css" />
-  <title>Document</title>
-</head>
+  <body>
+    <header>
+      <div id="containerHeader">
+        <a href="../index.html">
+          <img src="../images/Media.png" alt="" class="logoImages" />
+        </a>
 
-<body>
-  <header>
-    <div id="containerHeader">
-      <a href="../index.html">
-        <img src="https://cdn.iconscout.com/icon/free/png-256/free-imagem-quadrado-3604303-3004161.png?f=webp" alt=""
-          class="logoImages" />
-      </a>
+        <div
+          id="menu-toggle"
+          aria-label="Menu"
+          aria-expanded="false"
+          role="button"
+          tabindex="0"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
 
-      <div id="menu-toggle" aria-label="Menu" aria-expanded="false" role="button" tabindex="0">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+        <div id="navContent">
+          <a href="./produto.html">PAGINA INICIAL</a>
+          <a href="./gradeProdutos.html">PRODUTOS</a>
+          <a href="./promocoes.html">PROMOÇÃO</a>
+          <a href="./mapa.html">ENDEREÇO</a>
+          <a href="./sobre.html">SOBRE</a>
+        </div>
+
+        <input id="searchBar" type="text" placeholder="Pesquisar..." />
+
+        <div id="figures">
+          <figure>
+            <a href="./carrinho.html">
+              <img src="../images/carrinhoIMG.png" class="logoImages" />
+            </a>
+          </figure>
+          <figure>
+            <a href="./cadastro.html">
+              <img src="../images/profileIMG.png" class="logoImages" />
+            </a>
+          </figure>
+        </div>
       </div>
+    </header>
 
-      <div id="navContent">
-        <a href="./produto.html">PAGINA INICIAL</a>
-        <a href="./gradeProdutos.html">PRODUTOS</a>
-        <a href="./promocoes.html">PROMOÇÃO</a>
-        <a href="./mapa.html">ENDEREÇO</a>
-        <a href="./sobre.html">SOBRE</a>
-      </div>
+    <div class="container">
+      <br />
 
-      <input id="searchBar" type="text" placeholder="Pesquisar..." />
-
-      <div id="figures">
-        <figure>
-          <a href="./carrinho.html">
-            <img src="../images/carrinhoIMG.png" class="logoImages" />
-          </a>
-        </figure>
-        <figure>
-          <a href="./cadastro.html">
-            <img src="../images/profileIMG.png" class="logoImages" />
-          </a>
-        </figure>
+      <div class="circle">
+        <h1><b>MAPA</b></h1>
+        <br />
+        <div>
+          <p>Onde nos Encontrar!</p>
+          <br />
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.5069544017683!2d-43.92591922477249!3d-19.945171431446795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699c00e2b4f6d%3A0x151e458ff7e7fbab!2sUniversidade%20FUMEC!5e0!3m2!1spt-BR!2sbr!4v1748199769584!5m2!1spt-BR!2sbr"
+            width="602"
+            height="309 "
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            id="map"
+          ></iframe>
+        </div>
       </div>
     </div>
-  </header>
-
-  <div class="container">
-
-    <br>
-
-    <div class="circle">
-      <h1><b>MAPA</b></h1>
-      <br>
-      <div>
-        <p>Onde nos Encontrar!</p>
-        <br>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.5069544017683!2d-43.92591922477249!3d-19.945171431446795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699c00e2b4f6d%3A0x151e458ff7e7fbab!2sUniversidade%20FUMEC!5e0!3m2!1spt-BR!2sbr!4v1748199769584!5m2!1spt-BR!2sbr"
-          width="602" height="309 " style="border: 0" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
-      </div>
-    </div>
-  </div>
-</body>
-<script src="../index.js"></script>
-
+  </body>
+  <script src="../index.js"></script>
 </html>

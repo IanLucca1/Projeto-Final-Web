@@ -1,96 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="../images/Media.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre - CampuStore</title>
+    <link rel="stylesheet" href="../css/sobre.css" />
+    <link rel="stylesheet" href="../css/headertest.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sobre - CampuStore</title>
-  <link rel="stylesheet" href="../css/sobre.css" />
-  <link rel="stylesheet" href="../css/headertest.css" />
-</head>
+  <body>
+    <header>
+      <div id="containerHeader">
+        <a href="../index.html">
+          <img src="../images/Media.png" alt="" class="logoImages" />
+        </a>
 
-<body>
-  <header>
-    <div id="containerHeader">
-      <a href="../index.html">
-        <img src="https://cdn.iconscout.com/icon/free/png-256/free-imagem-quadrado-3604303-3004161.png?f=webp" alt=""
-          class="logoImages" />
-      </a>
+        <div
+          id="menu-toggle"
+          aria-label="Menu"
+          aria-expanded="false"
+          role="button"
+          tabindex="0"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
 
-      <div id="menu-toggle" aria-label="Menu" aria-expanded="false" role="button" tabindex="0">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+        <div id="navContent">
+          <a href="./produto.html">PAGINA INICIAL</a>
+          <a href="./gradeProdutos.html">PRODUTOS</a>
+          <a href="./promocoes.html">PROMOÇÃO</a>
+          <a href="./mapa.html">ENDEREÇO</a>
+          <a href="./sobre.html">SOBRE</a>
+        </div>
+
+        <input id="searchBar" type="text" placeholder="Pesquisar..." />
+
+        <div id="figures">
+          <figure>
+            <a href="./carrinho.html">
+              <img src="../images/carrinhoIMG.png" class="logoImages" />
+            </a>
+          </figure>
+          <figure>
+            <a href="./cadastro.html">
+              <img src="../images/profileIMG.png" class="logoImages" />
+            </a>
+          </figure>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="circulo">
+        <div class="text">
+          <h1 id="Titulo">SOBRE O PROJETO</h1>
+          <p id="Descricao">
+            A CampuStore é uma empresa do setor varejista voltada para
+            estudantes do Ensino Superior. Em seu site, o menu inicial oferece
+            acesso organizado por categorias de produtos, como notebooks, livros
+            e outros itens. Há também seções exclusivas para promoções e
+            pesquisa de produtos. O projeto conta com um carrinho de compras
+            totalmente funcional e um formulário para cadastro de contas de
+            usuários, proporcionando uma experiência completa e prática para o
+            cliente.
+          </p>
+          <br />
+          <p>Entre em contato: 31 6664-9944</p>
+        </div>
       </div>
 
-      <div id="navContent">
-        <a href="./produto.html">PAGINA INICIAL</a>
-        <a href="./gradeProdutos.html">PRODUTOS</a>
-        <a href="./promocoes.html">PROMOÇÃO</a>
-        <a href="./mapa.html">ENDEREÇO</a>
-        <a href="./sobre.html">SOBRE</a>
-      </div>
-
-      <input id="searchBar" type="text" placeholder="Pesquisar..." />
-
-      <div id="figures">
-        <figure>
-          <a href="./carrinho.html">
-            <img src="../images/carrinhoIMG.png" class="logoImages" />
-          </a>
-        </figure>
-        <figure>
-          <a href="./cadastro.html">
-            <img src="../images/profileIMG.png" class="logoImages" />
-          </a>
-        </figure>
+      <div class="Membros">
+        <h2>Membros do Grupo:</h2>
+        <div class="membros-grid">
+          <div class="membro">
+            Ian Lucca
+            <p>Função: Tech Lead</p>
+          </div>
+          <div class="membro">
+            Hugo Luiz
+            <p>Função: Dev Front-End</p>
+          </div>
+          <div class="membro">
+            Davi Santos
+            <p>Função: Dev Front-End</p>
+          </div>
+          <div class="membro">
+            Thales Grossi
+            <p>Função: Dev Front-End</p>
+          </div>
+        </div>
       </div>
     </div>
-  </header>
-
-
-  <div class="container">
-    <div class="circulo">
-      <div class="text">
-        <h1 id="Titulo">SOBRE O PROJETO</h1>
-        <p id="Descricao">
-          A CampuStore é uma empresa do setor varejista voltada para
-          estudantes do Ensino Superior. Em seu site, o menu inicial oferece
-          acesso organizado por categorias de produtos, como notebooks, livros
-          e outros itens. Há também seções exclusivas para promoções e
-          pesquisa de produtos. O projeto conta com um carrinho de compras
-          totalmente funcional e um formulário para cadastro de contas de
-          usuários, proporcionando uma experiência completa e prática para o
-          cliente.
-        </p>
-        <br />
-        <p>Entre em contato: 31 6664-9944</p>
-      </div>
-    </div>
-
-    <div class="Membros">
-      <h2>Membros do Grupo:</h2>
-      <div class="membros-grid">
-        <div class="membro">
-          Ian Lucca
-          <p>Função: Tech Lead</p>
-        </div>
-        <div class="membro">
-          Hugo Luiz
-          <p>Função: Dev Front-End</p>
-        </div>
-        <div class="membro">
-          Davi Santos
-          <p>Função: Dev Front-End</p>
-        </div>
-        <div class="membro">
-          Thales Grossi
-          <p>Função: Dev Front-End</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
-<script src="../index.js"></script>
-
+  </body>
+  <script src="../index.js"></script>
 </html>
