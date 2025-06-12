@@ -176,11 +176,13 @@ button:hover {
   #resultado {
     position: absolute;
     margin-top: 40rem;
+    margin-bottom: 150px;
   }
 
   form {
     padding: 25px;
     border-radius: 15px;
+   margin-bottom: 150px;
   }
 
   form h2 {
