@@ -5,7 +5,7 @@
     CampuStore
 
 ## Link da Publicação do Projeto:
-    http
+    https://ianlucca1.github.io/Projeto-Final-Web/pages/mapa.html
 
 
 ## Participantes e Papéis:
